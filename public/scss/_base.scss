@@ -1,0 +1,30 @@
+:root {
+    --color-primary: #3498db;
+    --color-primary-light: #6eb5e5;
+    --color-primary-dark: #1c6a9e;
+
+    --color-secondary: #ff6530;
+
+    --color-grey-dark: #324754;
+    --color-grey-light: #f8fafb;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}

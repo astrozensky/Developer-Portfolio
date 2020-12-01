@@ -2,9 +2,11 @@
   --color-primary: #3498db;
   --color-primary-light: #6eb5e5;
   --color-primary-dark: #1c6a9e;
-  --color-secondary: #ff6530;
+  --color-secondary: #FFA330;
   --color-grey-dark: #324754;
-  --color-grey-light: #f8fafb;
+  --color-grey-light-1: #f8fafb;
+  --color-grey-light-2: #DDE7EC;
+  --color-grey-light-3: #AFC5CF;
 }
 
 *,
@@ -25,6 +27,48 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   line-height: 1.6;
+  background-color: var(--color-grey-light-2);
+}
+
+.container {
+  width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 8rem 80vh repeat(3, min-content) 15vh;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+}
+
+.header {
+  grid-column: full-start/full-end;
+  grid-row: 1/2;
+  z-index: 2;
+  background-color: yellowgreen;
+}
+
+.hero {
+  grid-column: full-start/full-end;
+  grid-row: 1/3;
+  background-color: orangered;
+}
+
+.projects {
+  grid-column: center-start/center-end;
+  background-color: blueviolet;
+}
+
+.contact {
+  grid-column: center-start/center-end;
+  background-color: palevioletred;
+}
+
+.resume {
+  grid-column: full-start/full-end;
+  background-color: powderblue;
+}
+
+.footer {
+  grid-column: full-start/full-end;
+  background-color: var(--color-grey-dark);
 }
 
 /*# sourceMappingURL=style.css.map */

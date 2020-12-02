@@ -1,4 +1,38 @@
 .footer {
     grid-column: full-start / full-end;
     background-color: var(--color-grey-dark);
+    clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 100%, 0 100%);
+    padding: 6rem 0;
+
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    row-gap: 2rem;
+
+    &__nav {
+        grid-row: 1 / 2;
+        justify-self: center;
+    }
+
+    &__social {
+        grid-row: 1 / 2;
+        justify-self: end;
+    }
+
+    &__logo {
+        width: 10rem;
+        height: 10rem;
+        display: block;
+        grid-row: 2 / 3;
+
+    }
+
+    &__copyright {
+        grid-row: 3 / 4;
+        justify-self: center;
+
+        font-size: 1.5rem;
+        color: var(--color-grey-light-2);
+    }
 }
+

@@ -1,5 +1,6 @@
 .projects {
     grid-column: center-start / center-end;
+    background-color: var(--color-grey-light-2);
    
     display: grid;
     grid-template-columns: repeat(2, 1fr);

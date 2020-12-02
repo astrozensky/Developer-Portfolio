@@ -1,4 +1,26 @@
 .resume {
-    grid-column: full-start / full-end;
-    background-color: powderblue;
+    grid-column: center-start / center-end;
+    background-color: var(--color-grey-light-1);
+    padding: 4rem 0;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    row-gap: 6rem;
+
+    &__heading {
+
+    }
+
+    &__img-box {
+        height: 50vh;
+        width: 50vw;
+        background-color: #eee;
+    }
+
+    &__img {
+
+    }
 }

@@ -32,7 +32,7 @@ body {
   font-family: var(--font-primary);
   font-weight: 300;
   line-height: 1.6;
-  background-color: var(--color-grey-light-2);
+  background-color: var(--color-grey-light-1);
 }
 
 .container {
@@ -171,6 +171,7 @@ body {
 
 .projects {
   grid-column: center-start/center-end;
+  background-color: var(--color-grey-light-2);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto-fit, min-content);
@@ -258,7 +259,7 @@ body {
 .contact {
   grid-column: center-start/center-end;
   background-color: var(--color-primary-light);
-  clip-path: polygon(0 10%, 100% 0, 100% 100%, 50% 90%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 50% 95%, 0 100%);
   padding: 8rem 0;
   padding-bottom: 12rem;
   display: grid;
@@ -362,10 +363,21 @@ body {
 }
 
 .resume {
-  grid-column: full-start/full-end;
-  background-color: powderblue;
+  grid-column: center-start/center-end;
+  background-color: var(--color-grey-light-1);
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  row-gap: 6rem;
 }
-
+.resume__img-box {
+  height: 50vh;
+  width: 50vw;
+  background-color: #eee;
+}
 .footer {
   grid-column: full-start/full-end;
   background-color: var(--color-grey-dark);

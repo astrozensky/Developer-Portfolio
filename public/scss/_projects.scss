@@ -40,14 +40,14 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
-        box-shadow: var(--shadow-light);
+        box-shadow: 0 0 5rem rgba(#000, .2);
     }
 
     &__info {
         background-color: #fff;
         height: 90%;
         width: 90%;
-        box-shadow: var(--shadow-light);
+        box-shadow: 0 0 5rem rgba(#000, .2);
         padding: 2rem 2rem;
 
         display: grid;
@@ -81,7 +81,9 @@
         text-align: center;
         font-size: 1.4rem;
         border-radius: 100px;
-        box-shadow: var(--shadow-light);
+        box-shadow: 0 0 1rem rgba(#000, .5);
+        transform: scale(1);
+        transition: all .2s;
 
         display: flex;
         justify-content: center;
@@ -91,6 +93,8 @@
 
     &__link:hover {
         background: var(--blue-gradient-reverse);
+        transform: scale(.98);
+        
     }
 
     &__social-icon {

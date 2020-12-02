@@ -1,4 +1,123 @@
 .contact {
     grid-column: center-start / center-end;
-    background-color: va(--var-primary-light);
+    background-color: var(--color-primary-light);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 50% 90%, 0 100%);
+    padding: 8rem 0;
+    padding-bottom: 12rem;
+
+    display: grid;
+    grid-template-columns: min-content 60%;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5rem;
+    column-gap: 2rem;
+
+    &__heading {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        justify-self: center;
+        color: #fff;
+    }
+
+    &__info {
+        grid-column: 1 / 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: end;
+        row-gap: 1.5rem;
+        color: #fff;
+    }
+
+    &__details {
+        font-size: 1.8rem;
+        line-height: 2;
+        text-align: right;
+    }
+
+    &__form {
+        grid-column: 2 / 3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+        column-gap: 2rem;
+        background-color: var(--color-primary);
+        padding: 3rem;
+        box-shadow: 0 0 5rem rgba(#000, .2);
+    }
 }
+
+%inputs {
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--color-grey-light-1);
+    padding: 1rem;
+    font-family: var(--font-primary);
+
+    &::placeholder{
+        font-family: var(--font-primary);
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 1.5rem rgba(#000, .7);
+    }
+}
+
+.form {
+
+    &__input {
+        grid-row: 1 / 2;
+        @extend %inputs;
+    }
+
+    &__message {
+        grid-row: 2 / 3;
+        grid-column: 1 / -1;
+        @extend %inputs;
+    }   
+
+    &__btn-icon {
+        height: 2rem;
+        width: 2rem;
+        margin-right: 1rem;
+        fill: #fff;
+    }
+}
+
+.btn {
+    @extend %inputs;
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+    justify-self: center;
+    background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-primary);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 70%;
+    padding: 2rem 0;
+    color: #fff;
+    transform: scale(1);
+    transition: all .2s;
+
+    &:hover {
+        box-shadow: 0 0 1.5rem rgba(#000, .7);
+        transform: scale(.98);
+    }
+
+    &:active {
+        transform: scale(.96);
+    }
+}   
+
+.accent-line {
+    height: 2px;
+    width: 90%;
+    background-color: var(--color-primary-dark);
+    display: block;
+    margin: 0 auto;
+}
+

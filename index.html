@@ -105,10 +105,35 @@
 
         </section>
         <section class="contact">
-            Contact
+            <h2 class="heading-2 contact__heading">Contact Me <span class="accent-line"></span></h2>
+            <div class="contact__info">
+                <h4 class="heading-4">Alex Strozensky<span class="accent-line"></span></h4>
+                <p class="contact__details">
+                    (678) 620-9386 
+                    alexestrozensky@gmail.com 
+                    Missoula, Montana
+                </p>
+            </div>
+            <form action="" class="contact__form">
+                <label for="name"></label>
+                <input id="name" name="Name" type="text" class="form__input" placeholder="Your Name">
+                <label for="email"></label>
+                <input id="email" name="Email" type="email" class="form__input" placeholder="Your Email">
+                <label for="message"></label>
+                <textarea name="Message" id="message" class="form__message" cols="30" rows="15" placeholder="Message"></textarea>
+                <button class="btn" type="submit">
+                    <svg class="form__btn-icon">
+                        <use xlink:href="public/img/sprite.svg#icon-paper-plane"></use>
+                    </svg> 
+                    Send
+                </button>
+            </form>
         </section>
         <section class="resume">
-            Resume
+            <h2 class="heading-2 resume__heading">Resume</h2>
+            <figure class="resume__img-box">
+                <img src="" alt="Picture of resume" class="resume__img">
+            </figure>
         </section>
         <footer class="footer">
             Footer

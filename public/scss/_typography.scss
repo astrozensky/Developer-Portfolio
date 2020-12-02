@@ -1,0 +1,26 @@
+%heading {
+    font-family: var(--font-primary);
+    font-weight: 200;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: 6rem;
+    color: #fff;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-weight: 300;
+    font-size: 4rem;
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.heading-4 {
+    @extend %heading;
+}

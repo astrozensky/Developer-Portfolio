@@ -9,6 +9,8 @@
     --color-grey-light-1: #f8fafb;
     --color-grey-light-2: #DDE7EC;
     --color-grey-light-3: #AFC5CF;
+
+    --font-primary: "Montserrat", sans-serif;
 }
 
 *,
@@ -26,7 +28,7 @@ html {
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-primary);
     font-weight: 300;
     line-height: 1.6;
     background-color: var(--color-grey-light-2);

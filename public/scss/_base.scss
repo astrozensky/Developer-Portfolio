@@ -1,4 +1,5 @@
 :root {
+    // COLORS
     --color-primary: #3498db;
     --color-primary-light: #6eb5e5;
     --color-primary-dark: #1c6a9e;
@@ -10,7 +11,16 @@
     --color-grey-light-2: #DDE7EC;
     --color-grey-light-3: #AFC5CF;
 
+    // FONT
     --font-primary: "Montserrat", sans-serif;
+
+    // BOX SHADOWS
+    --shadow-dark: 0 1rem 10rem rgba(0,0,0,.4);
+    --shadow-light: 0 1rem 10rem rgba(#324754, .4);
+
+    // LINEAR GRADIENT
+    --blue-gradient: linear-gradient( to right, var(--color-primary-light), var(--color-primary));
+    --blue-gradient-reverse: linear-gradient( to left, var(--color-primary-light), var(--color-primary));
 }
 
 *,
@@ -35,7 +45,7 @@ body {
 }
 
 .container {
-    width: 120rem;
+    width: 100vw;
     margin: 0 auto;
 
     display: grid;

@@ -29,9 +29,10 @@
         font-size: 2rem;
         font-weight: 400;
         background-color: var(--color-primary-light);
+        border-radius: 100px;
         padding: 1.5rem 3rem;
         margin-top: 2rem;
-        box-shadow: 0rem 1rem 10rem rgba(0,0,0,.4);
+        box-shadow: var(--shadow-dark);
     }
 
     &__link:hover {

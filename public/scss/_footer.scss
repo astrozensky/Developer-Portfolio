@@ -20,11 +20,15 @@
     }
 
     &__logo {
-        width: 10rem;
-        height: 10rem;
+        width: 5vw;
+        height: 5vw;
         display: block;
         grid-row: 2 / 3;
 
+        @media only screen and (max-width:$bp-medium) {
+            height: 7vw;
+            width: 7vw;
+        }
     }
 
     &__copyright {

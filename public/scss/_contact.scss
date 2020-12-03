@@ -19,6 +19,7 @@
         @media only screen and (min-width: $bp-xxlarge) {
             grid-template-columns: min-content 40vw;
         }
+
     }
 
     &__heading {
@@ -82,7 +83,8 @@
 
         @media only screen and (max-width:$bp-medium) {
             grid-row: 2 / 3;
-        
+            width: 75vw;
+            justify-self: center;
         }
     }
 }

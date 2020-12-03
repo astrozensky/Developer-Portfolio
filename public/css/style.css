@@ -189,7 +189,8 @@ body {
   grid-template-rows: repeat(auto-fit, min-content);
   row-gap: 8rem;
   align-items: center;
-  padding: 5rem 0;
+  padding: 15rem 5rem;
+  margin: -10rem 0;
 }
 .projects__heading {
   grid-column: 1/-1;
@@ -386,7 +387,7 @@ body {
   row-gap: 6rem;
 }
 .resume__img-box {
-  height: 50vh;
+  height: 80vh;
   width: 50vw;
   background-color: #eee;
 }

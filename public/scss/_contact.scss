@@ -1,16 +1,25 @@
 .contact {
-    grid-column: center-start / center-end;
+    grid-column: full-start / full-end;
     background-color: var(--color-primary-light);
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 50% 95%, 0 100%);
     padding: 8rem 0;
     padding-bottom: 12rem;
 
-    display: grid;
-    grid-template-columns: min-content 60%;
-    justify-content: center;
-    align-items: center;
-    row-gap: 5rem;
-    column-gap: 2rem;
+    
+
+    &__container {
+        grid-column: center-start / center-end;
+        display: grid;
+        grid-template-columns: min-content 60%;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5rem;
+        column-gap: 2rem;
+
+        @media only screen and (min-width: $bp-xxlarge) {
+            grid-template-columns: min-content 40vw;
+        }
+    }
 
     &__heading {
         grid-column: 1 / -1;
@@ -26,12 +35,39 @@
         justify-items: end;
         row-gap: 1.5rem;
         color: #fff;
+
+        @media only screen and (max-width:$bp-medium) {
+            grid-column: 1 / -1;
+            justify-items: center;
+        }
     }
 
     &__details {
+        display: grid;
+        justify-items: end;
         font-size: 1.8rem;
         line-height: 2;
         text-align: right;
+
+        @media only screen and (max-width:$bp-medium) {
+            display: flex;
+            align-items: center;
+        }
+
+        &-span {
+            height: 80%;
+            width: 2px;
+            background-color: var(--color-primary-dark);
+            display: inline-block;
+            margin: 0 1vw;
+            visibility: hidden;
+
+            @media only screen and (max-width:$bp-medium) {
+                visibility: visible;
+            }
+        }
+
+        
     }
 
     &__form {
@@ -43,6 +79,11 @@
         background-color: var(--color-primary);
         padding: 3rem;
         box-shadow: 0 0 5rem rgba(#000, .2);
+
+        @media only screen and (max-width:$bp-medium) {
+            grid-row: 2 / 3;
+        
+        }
     }
 }
 
@@ -102,6 +143,7 @@
     color: #fff;
     transform: scale(1);
     transition: all .2s;
+    cursor: pointer;
 
     &:hover {
         box-shadow: 0 0 1.5rem rgba(#000, .7);

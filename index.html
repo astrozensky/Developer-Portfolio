@@ -52,86 +52,95 @@
             
         </section>
         <section class="projects">
-            <h2 class="heading-2 projects__heading">Projects</h2>
+            <div class="projects__container">
+                <h2 class="heading-2 projects__heading">Projects</h2>
 
-            <article class="project project-1">
-                <img src="public/img/trillo.png" alt="Trillo project image" class="project__img">
-                <div class="project__info">
-                    <h4 class="heading-4 project__title">Trillo</h4>
-                    <p class="project__description">Project Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis mi ac elit volutpat molestie. Fusce posuere ipsum est, eget porttitor magna varius eget. Vivamus et dolor sed mi fermentum.</p>
-                    <a href="#" class="project__link">
-                        <svg class="header__social-icon">
-                            <use xlink:href="public/img/sprite.svg#icon-github"></use>
-                        </svg> 
-                    </a>
-                    <a href="#" class="project__link">
-                        View project
-                    </a>
-                </div>               
-            </article>
-            
-            <article class="project project-2">
-                <div class="project__info project__info-2">
-                    <h4 class="heading-4 project__title">Nexter</h4>
-                    <p class="project__description">Project Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis mi ac elit volutpat molestie. Fusce posuere ipsum est, eget porttitor magna varius eget. Vivamus et dolor sed mi fermentum.</p>
-                    <a href="#" class="project__link">
-                        <svg class="header__social-icon">
-                            <use xlink:href="public/img/sprite.svg#icon-github"></use>
-                        </svg> 
-                    </a>
-                    <a href="#" class="project__link">
-                        View project
-                    </a>
-                </div>
-                <img src="public/img/nexter.png" alt="Nexter project image" class="project__img">
-            </article>
-
-            <article class="project project-3">
-                <img src="public/img/trillo.png" alt="Trillo project image" class="project__img">
-                <div class="project__info">
-                    <h4 class="heading-4 project__title">Trillo</h4>
-                    <p class="project__description">Project Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis mi ac elit volutpat molestie. Fusce posuere ipsum est, eget porttitor magna varius eget. Vivamus et dolor sed mi fermentum.</p>
-                    <a href="#" class="project__link">
-                        <svg class="header__social-icon">
-                            <use xlink:href="public/img/sprite.svg#icon-github"></use>
-                        </svg> 
-                    </a>
-                    <a href="#" class="project__link">
-                        View project
-                    </a>
-                </div>               
-            </article>
-            
-
-        </section>
-        <section class="contact">
-            <h2 class="heading-2 contact__heading">Contact Me <span class="accent-line"></span></h2>
-            <div class="contact__info">
-                <h4 class="heading-4">Alex Strozensky<span class="accent-line"></span></h4>
-                <p class="contact__details">
-                    (678) 620-9386 
-                    alexestrozensky@gmail.com 
-                    Missoula, Montana
-                </p>
+                <article class="project project-1">
+                    <img src="public/img/trillo.png" alt="Trillo project image" class="project__img">
+                    <div class="project__info">
+                        <h4 class="heading-4 project__title">Trillo</h4>
+                        <p class="project__description">Project Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis mi ac elit volutpat molestie. Fusce posuere ipsum est, eget porttitor magna varius eget. Vivamus et dolor sed mi fermentum.</p>
+                        <a href="#" class="project__link">
+                            <svg class="header__social-icon">
+                                <use xlink:href="public/img/sprite.svg#icon-github"></use>
+                            </svg> 
+                        </a>
+                        <a href="#" class="project__link">
+                            View project
+                        </a>
+                    </div>               
+                </article>
+                
+                <article class="project project-2">
+                    <div class="project__info project__info-2">
+                        <h4 class="heading-4 project__title">Nexter</h4>
+                        <p class="project__description">Project Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis mi ac elit volutpat molestie. Fusce posuere ipsum est, eget porttitor magna varius eget. Vivamus et dolor sed mi fermentum.</p>
+                        <a href="#" class="project__link">
+                            <svg class="header__social-icon">
+                                <use xlink:href="public/img/sprite.svg#icon-github"></use>
+                            </svg> 
+                        </a>
+                        <a href="#" class="project__link">
+                            View project
+                        </a>
+                    </div>
+                    <img src="public/img/nexter.png" alt="Nexter project image" class="project__img">
+                </article>
+    
+                <article class="project project-3">
+                    <img src="public/img/trillo.png" alt="Trillo project image" class="project__img">
+                    <div class="project__info">
+                        <h4 class="heading-4 project__title">Trillo</h4>
+                        <p class="project__description">Project Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis mi ac elit volutpat molestie. Fusce posuere ipsum est, eget porttitor magna varius eget. Vivamus et dolor sed mi fermentum.</p>
+                        <a href="#" class="project__link">
+                            <svg class="header__social-icon">
+                                <use xlink:href="public/img/sprite.svg#icon-github"></use>
+                            </svg> 
+                        </a>
+                        <a href="#" class="project__link">
+                            View project
+                        </a>
+                    </div>               
+                </article>
             </div>
-            <form action="" class="contact__form">
-                <label for="name"></label>
-                <input id="name" name="Name" type="text" class="form__input" placeholder="Your Name">
-                <label for="email"></label>
-                <input id="email" name="Email" type="email" class="form__input" placeholder="Your Email">
-                <label for="message"></label>
-                <textarea name="Message" id="message" class="form__message" cols="30" rows="15" placeholder="Message"></textarea>
-                <button class="btn" type="submit">
-                    <svg class="form__btn-icon">
-                        <use xlink:href="public/img/sprite.svg#icon-paper-plane"></use>
-                    </svg> 
-                    Send
-                </button>
-            </form>
+            
+            
+
         </section>
+
+        <section class="contact">
+            
+            <div class="contact__container">
+                <h2 class="heading-2 contact__heading">Contact Me <span class="accent-line"></span></h2>
+                <div class="contact__info">
+                    <h4 class="heading-4">Alex Strozensky<span class="accent-line"></span></h4>
+                    <p class="contact__details">
+                        (678) 620-9386 <span class="contact__details-span"></span>
+                        alexestrozensky@gmail.com <span class="contact__details-span"></span>
+                        Missoula, Montana
+                    </p>
+                </div>
+                <form action="" class="contact__form">
+                    <label for="name"></label>
+                    <input id="name" name="Name" type="text" class="form__input" placeholder="Your Name">
+                    <label for="email"></label>
+                    <input id="email" name="Email" type="email" class="form__input" placeholder="Your Email">
+                    <label for="message"></label>
+                    <textarea name="Message" id="message" class="form__message" cols="30" rows="15" placeholder="Message"></textarea>
+                    <button class="btn" type="submit">
+                        <svg class="form__btn-icon">
+                            <use xlink:href="public/img/sprite.svg#icon-paper-plane"></use>
+                        </svg> 
+                        Send
+                    </button>
+                </form>
+            </div>
+            
+        </section>
+
         <section class="resume">
             <h2 class="heading-2 resume__heading">Resume</h2>
-            <figure class="resume__img-box">
+            <figure class="resume__box">
                 <object data="public/img/Alex Strozensky - Resume.pdf" type="application/pdf" width="100%" height="100%">
                     <embed src="public/img/Alex Strozensky - Resume.pdf" type="application/pdf">
                         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
@@ -140,6 +149,7 @@
             </figure>
             
         </section>
+
         <footer class="footer">
             <nav class="main-nav footer__nav">
                 <ul class="main-nav__list">

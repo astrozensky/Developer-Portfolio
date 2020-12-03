@@ -10,17 +10,14 @@
     align-items: center;
     row-gap: 6rem;
 
-    // &__heading {
-
-    // }
-
-    &__img-box {
+    &__box {
         height: 80vh;
         width: 50vw;
         background-color: #eee;
     }
 
-    // &__img {
+    @media only screen and (max-width:$bp-largest) {
+        grid-column: full-start / full-end;
+    }
 
-    // }
 }

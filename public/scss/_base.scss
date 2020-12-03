@@ -23,6 +23,14 @@
     --blue-gradient-reverse: linear-gradient( to left, var(--color-primary-light), var(--color-primary));
 }
 
+// RESPONSIVE BREAKPOINTS
+$bp-xxlarge: 93.75em; // 1500px
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+$bp-xsmall: 34.37em; // 550px
+
 *,
 *::before,
 *::after {
@@ -35,6 +43,10 @@ html {
     font-size: 62.5%; // 1rem = 10px
     box-sizing: border-box;
     scroll-behavior: smooth;
+
+    @media only screen and (max-width:$bp-large) {
+        font-size: 50%; // 1rem = 8px
+    }
 }
 
 body {
@@ -42,10 +54,12 @@ body {
     font-weight: 300;
     line-height: 1.6;
     background-color: var(--color-grey-light-1);
+    overflow-x: hidden;
 }
 
 .container {
     width: 100vw;
+    max-width: 100%;
     margin: 0 auto;
 
     display: grid;

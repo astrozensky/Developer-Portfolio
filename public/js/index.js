@@ -8,6 +8,19 @@ $(document).ready(function() {
         } });
     });
 
+    $(function() {
+        $(".mobile-nav__btn").on("click", () => {
+            if( $(".mobile-nav__container").hasClass("hidden") ) {
+                $(".mobile-nav__container").removeClass("hidden")
+                $(".mobile-nav__container").addClass("visible");
+            } else {
+                $(".mobile-nav__container").removeClass("visible");
+                $(".mobile-nav__container").addClass("hidden");
+            }
+        });
+    });
+    
+
 });
 
 

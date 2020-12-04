@@ -5,7 +5,9 @@
     padding: 10rem 0;
     padding-bottom: 12rem;
 
-    
+    @media only screen and (max-width: $bp-small) {
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 50% 95%, 0 100%);
+    }
 
     &__container {
         grid-column: center-start / center-end;
@@ -78,7 +80,7 @@
     &__form {
         grid-column: 2 / 3;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
         row-gap: 2rem;
         column-gap: 2rem;
         background-color: var(--color-primary);
@@ -121,6 +123,10 @@
         grid-row: 2 / 3;
         grid-column: 1 / -1;
         @extend %inputs;
+
+        @media only screen and (max-width: $bp-small) {
+            grid-row: 3 / 4;
+        }
     }   
 
     &__btn-icon {
@@ -128,6 +134,19 @@
         width: 2rem;
         margin-right: 1rem;
         fill: #fff;
+    }
+}
+
+#name {
+    @media only screen and (max-width: $bp-small) {
+        grid-column: 1 / -1;
+    }
+}
+
+#email {
+    @media only screen and (max-width: $bp-small) {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
     }
 }
 
@@ -150,6 +169,10 @@
     transform: scale(1);
     transition: all .2s;
     cursor: pointer;
+
+    @media only screen and (max-width: $bp-small) {
+        grid-row: 5 / 6;
+    }
 
     &:hover {
         box-shadow: 0 0 1.5rem rgba(#000, .7);

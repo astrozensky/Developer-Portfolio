@@ -33,6 +33,10 @@
         padding: 1.5rem 3rem;
         margin-top: 2rem;
         box-shadow: var(--shadow-dark);
+
+        @media only screen and (max-width: $bp-xsmall) {
+            font-size: 1.4rem;
+        }
     }
 
     &__link:hover {

@@ -22,7 +22,6 @@
             grid-template-columns: min-content 40vw;
         }
 
-
     }
 
     &__heading {
@@ -91,6 +90,11 @@
             grid-row: 2 / 3;
             width: 75vw;
             justify-self: center;
+            margin-right: 2rem;
+        }
+
+        @media only screen and (max-width:$bp-xsmall) {
+            width: 90vw;
         }
     }
 }
@@ -104,6 +108,14 @@
 
     &::placeholder{
         font-family: var(--font-primary);
+        
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.6rem;
+        }
+
+        @media only screen and (max-width: $bp-xsmall) {
+            font-size: 1.4rem;
+        }
     }
 
     &:focus {

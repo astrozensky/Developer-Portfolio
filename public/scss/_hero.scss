@@ -37,6 +37,10 @@
         @media only screen and (max-width: $bp-xsmall) {
             font-size: 1.4rem;
         }
+
+        @media only screen and (max-width: $bp-xxsmall) {
+            font-size: 1.2rem;
+        }
     }
 
     &__link:hover {

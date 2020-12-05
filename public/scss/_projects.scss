@@ -103,6 +103,10 @@
             align-content: center;
         }
 
+        @media only screen and (max-width: $bp-xsmall) {
+            grid-template-rows: auto;
+        }
+
         &-2 {
             justify-self: end;
 
@@ -143,9 +147,11 @@
         justify-content: center;
         align-items: center;
 
-        @media only screen and (max-width:$bp-small) {
+        @media only screen and (max-width:$bp-xsmall) {
             height: 10vh;
-            width: 20vw;
+            width: 70%;
+            grid-column: 1 / -1;
+            margin-top: 1rem;
         }
         
     }

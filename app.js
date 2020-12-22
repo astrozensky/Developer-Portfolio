@@ -35,7 +35,7 @@ app.use(function (req, res, next) {
 
 // Routes
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("landing");
 });
 
 app.post("/email", (req, res) => {

@@ -1,23 +1,59 @@
 .resume {
-    grid-column: center-start / center-end;
-    background-color: var(--color-grey-light-1);
-    padding: 4rem 0;
+  grid-column: center-start / center-end;
+  background-color: var(--color-grey-light-1);
+  padding: 4rem 0;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    row-gap: 6rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  row-gap: 6rem;
 
-    &__box {
-        height: 80vh;
-        width: 50vw;
-        background-color: #eee;
+  &__box {
+    height: auto;
+    width: 90vw;
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+
+    @media only screen and (min-width: $bp-medium) {
+      width: 80vw;
     }
 
-    @media only screen and (max-width:$bp-largest) {
-        grid-column: full-start / full-end;
+    @media only screen and (min-width: $bp-large) {
+      width: 75vw;
     }
 
+    @media only screen and (min-width: $bp-largest) {
+      width: 65vw;
+    }
+
+    @media only screen and (min-width: $bp-xxlarge) {
+      width: 50vw;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__link:link,
+  &__link:visited {
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--color-primary);
+
+    &:hover {
+      color: var(--color-primary-dark);
+    }
+
+    @media only screen and (min-width: $bp-xxsmall) {
+      font-size: 1.8;
+    }
+  }
+
+  @media only screen and (max-width: $bp-largest) {
+    grid-column: full-start / full-end;
+  }
 }
